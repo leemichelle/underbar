@@ -434,6 +434,7 @@
         // e.g. whether or not the function has been called.
         var spy = sinon.spy(function() { return 'Dummy output'; });
         var memoSpy = _.memoize(spy);
+        debugger;
 
         memoSpy(10);
         expect(spy).to.have.been.calledOnce;
